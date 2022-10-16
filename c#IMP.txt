@@ -1,0 +1,114 @@
+
+<%
+
+//Write a program for Number is palindrome Or NOt
+	int num = 1512;
+	int r =0;
+	int org;
+	org=num;
+	
+	while(num!=0)
+	{
+		int rem= num%10;
+		r = r * 10 + rem;
+		num /=10;
+	}
+	if(org == r)
+	{
+		out.print("Number is palindrome");
+	}
+	else{
+		out.print("Number is NOT palindrome");
+	}
+
+
+%>
+
+__________________________________________________________
+
+
+<%
+//Write A program to print Factorial
+
+	int fact = 1;
+	int n = 5;
+	
+	for(int f=1; f<=n; f++)
+	{
+		fact = fact *f;
+	}
+
+	out.println("Factorial is =" +fact);
+
+
+%>
+__________________________________________________________________
+
+
+
+<%
+//Write A program check whether Number is AramStrong or NOT
+
+	int num =153;
+	int sum=0;
+	int rem;
+	int temp;
+	temp=num;
+	
+	
+	while(num!=0)
+	{
+		rem = num%10;
+		sum =sum + (rem*rem*rem);
+		num = num/10;
+		
+	}
+	if(temp ==sum)
+	{
+		out.print("Number is armstrong");
+		
+	}
+	else{
+		out.print("Number Is NOT Armstrong");
+	}
+
+	
+
+%>
+_________________________________________________________________
+
+<%
+//Write A program check whether Number IS prime or not
+
+boolean b = true;
+int n =8;
+
+for(int i=2; i<n; i++){
+	
+	if(n%i ==0)
+	{
+		b = false;
+	}
+}
+	
+if(b == true){
+	out.print("Number Is Prime");
+}
+else{
+	out.print("Number Is NOT PRIME");
+}
+
+
+	
+
+%>
+_____________________________________________________________-
+
+
+	
+
+
+
+
+
+
